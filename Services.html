@@ -1,0 +1,1084 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rivaara Chambers | Our Services</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f5ef;
+    color:#172536;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:82px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 7%;
+
+    background:rgba(6,17,29,0.97);
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(214,180,94,0.25);
+}
+
+
+/* ================= LOGO ================= */
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.law-logo{
+    width:51px;
+    height:51px;
+
+    border:2px solid #d8b568;
+    border-radius:50%;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#d8b568;
+
+    box-shadow:
+    inset 0 0 0 3px #081522,
+    inset 0 0 0 4px #d8b568;
+}
+
+.law-logo .rc{
+    font-family:Georgia,serif;
+    font-size:17px;
+    font-weight:bold;
+    color:#d8b568;
+    letter-spacing:1px;
+}
+
+.law-logo .top-mark{
+    position:absolute;
+    top:-5px;
+    width:18px;
+    height:7px;
+    border-top:2px solid #d8b568;
+    border-bottom:2px solid #d8b568;
+}
+
+.law-logo .bottom-mark{
+    position:absolute;
+    bottom:-5px;
+    width:18px;
+    height:7px;
+    border-top:2px solid #d8b568;
+    border-bottom:2px solid #d8b568;
+}
+
+.logo-name{
+    color:#fff;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.logo-name span{
+    color:#d8b568;
+    font-weight:normal;
+    font-size:13px;
+    letter-spacing:3px;
+    display:block;
+    margin-top:3px;
+}
+
+
+/* ================= NAV LINKS ================= */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:38px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    position:relative;
+    padding:10px 0;
+    transition:.3s;
+}
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:2px;
+    width:0;
+    height:2px;
+    background:#d8b568;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#d8b568;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+    width:100%;
+}
+
+
+/* ================= HERO ================= */
+
+.services-hero{
+    min-height:620px;
+
+    padding:170px 8% 100px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        rgba(5,16,28,0.91),
+        rgba(5,16,28,0.91)
+    ),
+    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2000&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-small{
+    color:#d8b568;
+    font-size:18px;
+    letter-spacing:5px;
+    font-weight:bold;
+    margin-bottom:22px;
+}
+
+.services-hero h1{
+    color:#fff;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:62px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.services-hero h1 span{
+    color:#d8b568;
+}
+
+.services-hero p{
+    color:#d0d8df;
+    max-width:760px;
+    margin:auto;
+    font-size:17px;
+    line-height:1.8;
+}
+
+
+/* ================= INTRO ================= */
+
+.intro{
+    padding:95px 8%;
+    text-align:center;
+    background:#f7f5ef;
+}
+
+.section-label{
+    color:#a27c2c;
+    font-size:13px;
+    letter-spacing:4px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.intro h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:43px;
+    margin-bottom:20px;
+    color:#172536;
+}
+
+.intro h2 span{
+    color:#a27c2c;
+}
+
+.intro p{
+    max-width:850px;
+    margin:auto;
+    color:#66737e;
+    font-size:16px;
+    line-height:1.9;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services{
+    padding:100px 8%;
+    background:#091827;
+}
+
+.service-grid{
+    max-width:1250px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+}
+
+
+/* ================= SERVICE CARD ================= */
+
+.service-card{
+    background:linear-gradient(
+        145deg,
+        #142b40,
+        #0b1a2b
+    );
+
+    border:1px solid #263d51;
+
+    position:relative;
+    overflow:hidden;
+
+    transition:.4s;
+
+    min-height:590px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    border-color:#d8b568;
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+
+/* ================= SERVICE IMAGE ================= */
+
+.service-image{
+    width:100%;
+    height:235px;
+    overflow:hidden;
+    position:relative;
+}
+
+.service-image::after{
+    content:"";
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(6,17,29,.75),
+        rgba(6,17,29,.05)
+    );
+}
+
+.service-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:.6s;
+}
+
+.service-card:hover .service-image img{
+    transform:scale(1.08);
+}
+
+
+/* ================= SERVICE CONTENT ================= */
+
+.service-content{
+    padding:32px 30px 35px;
+    flex:1;
+}
+
+.service-number{
+    color:#d8b568;
+    font-size:12px;
+    letter-spacing:2px;
+    margin-bottom:16px;
+    font-weight:bold;
+}
+
+.service-card h3{
+    color:#fff;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:27px;
+    margin-bottom:18px;
+}
+
+.service-card p{
+    color:#b7c1ca;
+    font-size:15px;
+    line-height:1.8;
+}
+
+
+/* ================= GOLD LINE ================= */
+
+.service-card .gold-line{
+    width:45px;
+    height:2px;
+    background:#d8b568;
+    margin-bottom:20px;
+    transition:.4s;
+}
+
+.service-card:hover .gold-line{
+    width:75px;
+}
+
+
+/* ================= PROCESS ================= */
+
+.process{
+    padding:105px 8%;
+    background:#f3f0e8;
+    text-align:center;
+}
+
+.process h2{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:43px;
+    margin-bottom:18px;
+}
+
+.process h2 span{
+    color:#a27c2c;
+}
+
+.process-intro{
+    max-width:760px;
+    margin:0 auto 55px;
+    color:#687580;
+    line-height:1.8;
+}
+
+.process-grid{
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.process-box{
+    background:#fff;
+    padding:38px 28px;
+
+    border:1px solid #e1dccf;
+
+    transition:.4s;
+}
+
+.process-box:hover{
+    transform:translateY(-8px);
+    border-color:#d8b568;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.process-number{
+    width:55px;
+    height:55px;
+
+    margin:0 auto 20px;
+
+    border:1px solid #d8b568;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#a27c2c;
+
+    font-family:Georgia,serif;
+    font-size:20px;
+}
+
+.process-box h3{
+    font-size:20px;
+    margin-bottom:14px;
+}
+
+.process-box p{
+    color:#687580;
+    line-height:1.7;
+    font-size:14px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta{
+    min-height:430px;
+
+    padding:100px 8%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(5,16,27,.92),
+        rgba(5,16,27,.92)
+    ),
+    url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1800&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.cta-content{
+    max-width:800px;
+}
+
+.cta h2{
+    color:#fff;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:45px;
+    margin-bottom:20px;
+}
+
+.cta h2 span{
+    color:#d8b568;
+}
+
+.cta p{
+    color:#d0d8de;
+    font-size:17px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:15px 30px;
+
+    border:1px solid #d8b568;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:.35s;
+}
+
+.btn-primary{
+    background:#d8b568;
+    color:#071522;
+}
+
+.btn:hover{
+    background:#d8b568;
+    color:#071522;
+    transform:translateY(-4px);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#050e17;
+    color:#8995a1;
+
+    padding:30px 8%;
+
+    text-align:center;
+
+    font-size:13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1050px){
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:900px){
+
+    nav{
+        padding:0 5%;
+    }
+
+    nav ul{
+        gap:18px;
+    }
+
+    .services-hero h1{
+        font-size:50px;
+    }
+
+    .process-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:700px){
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:650px){
+
+    nav{
+        height:auto;
+        min-height:80px;
+
+        flex-direction:column;
+
+        gap:12px;
+
+        padding:15px 5%;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+
+    nav ul li a{
+        font-size:11px;
+    }
+
+    .services-hero{
+        padding:180px 7% 90px;
+    }
+
+    .services-hero h1{
+        font-size:39px;
+    }
+
+    .hero-small{
+        font-size:14px;
+        letter-spacing:3px;
+    }
+
+    .services-hero p{
+        font-size:15px;
+    }
+
+    .intro h2,
+    .process h2,
+    .cta h2{
+        font-size:32px;
+    }
+
+    .service-image{
+        height:210px;
+    }
+
+    .service-content{
+        padding:28px 24px 32px;
+    }
+
+    .service-card h3{
+        font-size:24px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:300px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo-area">
+
+        <div class="law-logo">
+
+            <div class="top-mark"></div>
+
+            <div class="rc">
+                RC
+            </div>
+
+            <div class="bottom-mark"></div>
+
+        </div>
+
+        <div class="logo-name">
+            RIVAARA
+            <span>CHAMBERS</span>
+        </div>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About Us
+            </a>
+        </li>
+
+        <li>
+            <a href="services.html" class="active">
+                Explore Our Services
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="services-hero">
+
+    <div class="hero-content">
+
+        <div class="hero-small">
+            RIVAARA CHAMBERS
+        </div>
+
+        <h1>
+            Our Legal
+            <span>Services.</span>
+        </h1>
+
+        <p>
+            Professional legal assistance, strategic advice and
+            practical solutions across a range of legal matters.
+            Our approach is centred on understanding, preparation
+            and clear communication.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro">
+
+    <div class="section-label">
+        OUR PRACTICE AREAS
+    </div>
+
+    <h2>
+        Focused Legal Services.
+        <span>Practical Solutions.</span>
+    </h2>
+
+    <p>
+        Rivaara Chambers provides legal assistance to individuals,
+        entrepreneurs, businesses and organisations across diverse
+        areas of law. We aim to understand the specific circumstances
+        of each matter and provide clear, considered legal guidance.
+    </p>
+
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+    <div class="service-grid">
+
+
+        <!-- ================= CIVIL ================= -->
+
+        <div class="service-card">
+
+            <div class="service-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1200&q=85"
+                alt="Civil Litigation and Legal Documents">
+
+            </div>
+
+            <div class="service-content">
+
+                <div class="service-number">
+                    01 / CIVIL LITIGATION
+                </div>
+
+                <div class="gold-line"></div>
+
+                <h3>
+                    Civil Litigation
+                </h3>
+
+                <p>
+                    Legal assistance in property disputes,
+                    injunctions, recovery proceedings, contractual
+                    disputes, possession matters and other civil
+                    litigation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= COMMERCIAL ================= -->
+
+        <div class="service-card">
+
+            <div class="service-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+                alt="Commercial and Corporate Legal Services">
+
+            </div>
+
+            <div class="service-content">
+
+                <div class="service-number">
+                    02 / COMMERCIAL & CORPORATE
+                </div>
+
+                <div class="gold-line"></div>
+
+                <h3>
+                    Commercial & Corporate
+                </h3>
+
+                <p>
+                    Legal support for businesses, including
+                    commercial contracts, legal notices, contractual
+                    disputes, business documentation and ongoing
+                    legal advisory.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= CYBER ================= -->
+
+        <div class="service-card">
+
+            <div class="service-image">
+
+                <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=85"
+                alt="Cyber Law and Digital Legal Assistance">
+
+            </div>
+
+            <div class="service-content">
+
+                <div class="service-number">
+                    03 / CYBER LAW
+                </div>
+
+                <div class="gold-line"></div>
+
+                <h3>
+                    Cyber Law
+                </h3>
+
+                <p>
+                    Legal assistance concerning online fraud,
+                    digital disputes, cyber offences and related
+                    legal remedies.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROCESS ================= -->
+
+<section class="process">
+
+    <div class="section-label">
+        OUR APPROACH
+    </div>
+
+    <h2>
+        A Structured Approach to
+        <span>Legal Matters.</span>
+    </h2>
+
+    <p class="process-intro">
+        Every legal matter requires careful consideration.
+        Our approach focuses on understanding the facts,
+        identifying the applicable legal issues and developing
+        a clear course of action.
+    </p>
+
+
+    <div class="process-grid">
+
+
+        <div class="process-box">
+
+            <div class="process-number">
+                01
+            </div>
+
+            <h3>
+                Understand
+            </h3>
+
+            <p>
+                We begin by understanding the facts,
+                circumstances and concerns surrounding
+                the legal matter.
+            </p>
+
+        </div>
+
+
+        <div class="process-box">
+
+            <div class="process-number">
+                02
+            </div>
+
+            <h3>
+                Analyse
+            </h3>
+
+            <p>
+                Relevant legal issues are carefully
+                considered to develop a clear understanding
+                of the available legal options.
+            </p>
+
+        </div>
+
+
+        <div class="process-box">
+
+            <div class="process-number">
+                03
+            </div>
+
+            <h3>
+                Act
+            </h3>
+
+            <p>
+                We work towards practical and legally
+                sound solutions suited to the specific
+                requirements of the matter.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <h2>
+            Have a Legal Matter?
+            <span>Let's Discuss.</span>
+        </h2>
+
+        <p>
+            If you require legal assistance or wish to understand
+            your available options, get in touch with Rivaara Chambers
+            for a consultation.
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+            Contact the Chambers
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026 Rivaara Chambers | Advocates & Legal Consultants
+
+</footer>
+
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+    const nav = document.querySelector("nav");
+
+    if(window.scrollY > 40){
+
+        nav.style.boxShadow =
+        "0 8px 30px rgba(0,0,0,0.25)";
+
+    }else{
+
+        nav.style.boxShadow = "none";
+
+    }
+
+});
+
+
+/* CARD ANIMATION */
+
+const cards = document.querySelectorAll(
+    ".service-card, .process-box"
+);
+
+const observer = new IntersectionObserver(
+
+    function(entries){
+
+        entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+                entry.target.style.opacity = "1";
+
+                entry.target.style.transform =
+                "translateY(0)";
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold:0.15
+    }
+
+);
+
+
+cards.forEach(function(card){
+
+    card.style.opacity = "0";
+
+    card.style.transform =
+    "translateY(35px)";
+
+    card.style.transition =
+    "opacity .7s ease, transform .7s ease";
+
+    observer.observe(card);
+
+});
+
+</script>
+
+
+</body>
+</html>
+```

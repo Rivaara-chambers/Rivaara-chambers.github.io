@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Rivaara Chambers | Legal Practice</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f5ef;
+    color:#172536;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:82px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 7%;
+
+    background:rgba(6,17,29,0.96);
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(214,180,94,0.25);
+
+    transition:0.3s;
+}
+
+
+/* ================= FULL LOGO ================= */
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.law-logo{
+    width:51px;
+    height:51px;
+
+    border:2px solid #d8b568;
+    border-radius:50%;
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:#d8b568;
+
+    box-shadow:
+    inset 0 0 0 3px #081522,
+    inset 0 0 0 4px #d8b568;
+}
+
+.law-logo .rc{
+    font-family:Georgia, serif;
+    font-size:17px;
+    font-weight:bold;
+    color:#d8b568;
+    letter-spacing:1px;
+    z-index:3;
+}
+
+.law-logo .top-mark{
+    position:absolute;
+    top:-5px;
+    width:18px;
+    height:7px;
+    border-top:2px solid #d8b568;
+    border-bottom:2px solid #d8b568;
+}
+
+.law-logo .bottom-mark{
+    position:absolute;
+    bottom:-5px;
+    width:18px;
+    height:7px;
+    border-top:2px solid #d8b568;
+    border-bottom:2px solid #d8b568;
+}
+
+.logo-name{
+    color:#fff;
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:22px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.logo-name span{
+    color:#d8b568;
+    font-weight:normal;
+    font-size:13px;
+    letter-spacing:3px;
+    display:block;
+    margin-top:3px;
+}
+
+
+/* ================= NAV LINKS ================= */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:38px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    position:relative;
+    padding:10px 0;
+    transition:.3s;
+}
+
+nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:2px;
+    width:0;
+    height:2px;
+    background:#d8b568;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#d8b568;
+}
+
+nav ul li a:hover::after{
+    width:100%;
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+    min-height:900px;
+
+    padding:160px 8% 110px;
+
+    display:flex;
+
+    align-items:center;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(5,16,28,0.97) 0%,
+        rgba(5,16,28,0.91) 45%,
+        rgba(5,16,28,0.70) 100%
+    ),
+
+    url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=2000&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:30%;
+
+    width:5px;
+    height:210px;
+
+    background:#d8b568;
+}
+
+.hero-content{
+    max-width:900px;
+    position:relative;
+    z-index:2;
+}
+
+
+/* ================= RIVAARA CHAMBERS ================= */
+
+.hero-small{
+    color:#d8b568;
+
+    /* TEXT MADE BIGGER */
+    font-size:32px;
+
+    letter-spacing:5px;
+
+    font-weight:bold;
+
+    margin-bottom:25px;
+}
+
+
+/* HERO MAIN HEADING */
+
+.hero h1{
+    color:#fff;
+
+    font-size:70px;
+
+    line-height:1.03;
+
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#d8b568;
+}
+
+.tagline{
+    font-size:28px;
+
+    font-weight:bold;
+
+    color:#fff;
+
+    margin-bottom:24px;
+}
+
+.tagline span{
+    color:#d8b568;
+}
+
+.hero-description{
+    max-width:780px;
+
+    color:#d2d9df;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+}
+
+.practice-line{
+    color:#e2e5e7;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    line-height:2;
+
+    margin-bottom:38px;
+}
+
+.practice-line span{
+    color:#d8b568;
+
+    margin:0 6px;
+}
+
+
+/* BUTTONS */
+
+.buttons{
+    display:flex;
+    gap:15px;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:16px 28px;
+
+    border:1px solid #d8b568;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:.35s;
+}
+
+.btn-primary{
+    background:#d8b568;
+    color:#071522;
+}
+
+.btn:hover{
+    background:#d8b568;
+    color:#071522;
+    transform:translateY(-4px);
+}
+
+
+/* ================= WELCOME ================= */
+
+.welcome{
+    padding:105px 8%;
+    background:#f7f5ef;
+}
+
+.section-label{
+    color:#a27c2c;
+
+    font-size:13px;
+
+    letter-spacing:4px;
+
+    font-weight:bold;
+
+    margin-bottom:16px;
+}
+
+.welcome h2{
+    font-size:45px;
+    color:#172536;
+    margin-bottom:25px;
+}
+
+.welcome h2 span{
+    color:#a27c2c;
+}
+
+.welcome-text{
+    max-width:1000px;
+
+    color:#606d78;
+
+    font-size:17px;
+
+    line-height:1.9;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about{
+    padding:100px 8%;
+
+    background:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:70px;
+}
+
+.about-image{
+    width:47%;
+    height:480px;
+    overflow:hidden;
+    position:relative;
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.7s;
+}
+
+.about-image:hover img{
+    transform:scale(1.06);
+}
+
+.image-label{
+    position:absolute;
+
+    left:25px;
+    bottom:25px;
+
+    background:#081522;
+
+    color:#fff;
+
+    padding:14px 20px;
+
+    border-left:3px solid #d8b568;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+}
+
+.about-content{
+    width:53%;
+}
+
+.about-content h2{
+    font-size:43px;
+    color:#172536;
+    margin-bottom:25px;
+}
+
+.about-content h2 span{
+    color:#a27c29;
+}
+
+.about-content p{
+    color:#626f7a;
+
+    font-size:16px;
+
+    line-height:1.85;
+
+    margin-bottom:20px;
+}
+
+.gold-line{
+    width:65px;
+    height:3px;
+    background:#d8b568;
+    margin-bottom:25px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services{
+    padding:110px 8%;
+
+    background:#091827;
+
+    color:#fff;
+}
+
+.services-header{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.services-header h2{
+    font-size:45px;
+    margin-bottom:18px;
+}
+
+.services-header h2 span{
+    color:#d8b568;
+}
+
+.services-header p{
+    max-width:750px;
+
+    margin:auto;
+
+    color:#aeb9c3;
+
+    line-height:1.8;
+}
+
+.service-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+}
+
+.service-card{
+    min-height:230px;
+
+    padding:32px;
+
+    background:linear-gradient(
+        145deg,
+        #13283c,
+        #0b1a2b
+    );
+
+    border:1px solid #263d51;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.service-card::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:3px;
+
+    background:#d8b568;
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+    border-color:#d8b568;
+}
+
+.service-card:hover::before{
+    transform:scaleX(1);
+}
+
+.service-number{
+    color:#d8b568;
+
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    margin-bottom:20px;
+}
+
+.service-card h3{
+    font-size:22px;
+    margin-bottom:14px;
+}
+
+.service-card p{
+    color:#b6c0c9;
+
+    font-size:14px;
+
+    line-height:1.75;
+}
+
+
+/* ================= WHY ================= */
+
+.why{
+    padding:105px 8%;
+
+    background:#f3f0e8;
+
+    text-align:center;
+}
+
+.why h2{
+    font-size:43px;
+
+    margin-bottom:20px;
+
+    color:#172536;
+}
+
+.why h2 span{
+    color:#a27c2c;
+}
+
+.why > p{
+    max-width:800px;
+
+    margin:0 auto 55px;
+
+    color:#64717c;
+
+    line-height:1.8;
+}
+
+.why-grid{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+}
+
+.why-box{
+    padding:38px 30px;
+
+    background:#fff;
+
+    border:1px solid #e4dfd3;
+
+    transition:.4s;
+}
+
+.why-box:hover{
+    transform:translateY(-8px);
+
+    border-color:#d8b568;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.why-icon{
+    width:55px;
+
+    height:55px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:1px solid #d8b568;
+
+    color:#a27c2c;
+
+    font-size:23px;
+}
+
+.why-box h3{
+    margin-bottom:15px;
+    font-size:21px;
+}
+
+.why-box p{
+    color:#687580;
+    line-height:1.7;
+}
+
+
+/* ================= FINAL ================= */
+
+.final{
+    min-height:450px;
+
+    padding:100px 8%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        rgba(5,16,27,.90),
+        rgba(5,16,27,.90)
+    ),
+
+    url("https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=1800&q=90");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.final-content{
+    max-width:800px;
+}
+
+.final h2{
+    color:#fff;
+
+    font-size:46px;
+
+    margin-bottom:20px;
+}
+
+.final h2 span{
+    color:#d8b568;
+}
+
+.final p{
+    color:#d1d8de;
+
+    line-height:1.8;
+
+    font-size:17px;
+
+    margin-bottom:30px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#050e17;
+
+    color:#8995a1;
+
+    padding:30px 8%;
+
+    text-align:center;
+
+    font-size:13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:950px){
+
+    nav{
+        padding:0 5%;
+    }
+
+    nav ul{
+        gap:18px;
+    }
+
+    .hero{
+        min-height:800px;
+    }
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .about{
+        flex-direction:column;
+    }
+
+    .about-image,
+    .about-content{
+        width:100%;
+    }
+
+    .service-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+@media(max-width:650px){
+
+    nav{
+        height:auto;
+
+        min-height:80px;
+
+        flex-direction:column;
+
+        gap:12px;
+
+        padding:15px 5%;
+    }
+
+    nav ul{
+        gap:15px;
+    }
+
+    nav ul li a{
+        font-size:11px;
+    }
+
+    .hero{
+        padding:180px 7% 90px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero-small{
+        font-size:17px;
+        letter-spacing:3px;
+    }
+
+    .tagline{
+        font-size:21px;
+    }
+
+    .hero-description{
+        font-size:16px;
+    }
+
+    .practice-line{
+        line-height:2;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        text-align:center;
+    }
+
+    .welcome h2,
+    .about-content h2,
+    .services-header h2,
+    .why h2,
+    .final h2{
+        font-size:32px;
+    }
+
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-image{
+        height:350px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo-area">
+
+        <div class="law-logo">
+
+            <div class="top-mark"></div>
+
+            <div class="rc">
+                RC
+            </div>
+
+            <div class="bottom-mark"></div>
+
+        </div>
+
+
+        <div class="logo-name">
+
+            RIVAARA
+
+            <span>
+                CHAMBERS
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About Us
+            </a>
+        </li>
+
+        <li>
+            <a href="services.html">
+                Explore Our Services
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-small">
+            RIVAARA CHAMBERS
+        </div>
+
+        <h1>
+            Clarity in Law.
+            <span>Confidence in Every Step.</span>
+        </h1>
+
+        <div class="tagline">
+
+            Legal representation,
+            strategic advice and practical solutions.
+
+        </div>
+
+        <p class="hero-description">
+
+            Providing professional legal assistance, thoughtful advice
+            and effective representation for individuals, businesses
+            and institutions.
+
+        </p>
+
+        <div class="practice-line">
+
+            Civil
+            <span>•</span>
+
+            Commercial
+            <span>•</span>
+
+            Matrimonial
+            <span>•</span>
+
+            Intellectual Property
+            <span>•</span>
+
+            Arbitration
+            <span>•</span>
+
+            Cyber Law
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="services.html" class="btn btn-primary">
+                Explore Our Services
+            </a>
+
+            <a href="contact.html" class="btn">
+                Contact the Chambers
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= WELCOME ================= -->
+
+<section class="welcome">
+
+    <div class="section-label">
+        WELCOME TO RIVAARA CHAMBERS
+    </div>
+
+    <h2>
+        A Clear Approach to
+        <span>Complex Legal Matters.</span>
+    </h2>
+
+    <p class="welcome-text">
+
+        Rivaara Chambers is committed to providing professional legal
+        assistance, thoughtful advice and effective representation
+        across a range of legal matters.
+
+        We work with individuals, entrepreneurs, businesses, start-ups
+        and organisations to understand their legal concerns and develop
+        practical, legally sound solutions tailored to their needs.
+
+    </p>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=90"
+        alt="Legal documents">
+
+        <div class="image-label">
+            PROFESSIONAL • PRECISE • CLIENT FOCUSED
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <div class="section-label">
+            ABOUT RIVAARA CHAMBERS
+        </div>
+
+        <div class="gold-line"></div>
+
+        <h2>
+            Legal Guidance Built Around
+            <span>Understanding.</span>
+        </h2>
+
+        <p>
+
+            Our practice encompasses civil and commercial disputes,
+            matrimonial matters, intellectual property rights,
+            arbitration, cyber law and related legal services.
+
+        </p>
+
+        <p>
+
+            At Rivaara Chambers, we believe that every legal matter
+            deserves careful attention, clear communication and a
+            considered approach.
+
+        </p>
+
+        <p>
+
+            Our objective is to help clients understand their legal
+            position, navigate complex procedures and make informed
+            decisions at every stage.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+    <div class="services-header">
+
+        <div class="section-label">
+            OUR PRACTICE AREAS
+        </div>
+
+        <h2>
+            Focused Legal Services.
+            <span>Practical Solutions.</span>
+        </h2>
+
+        <p>
+
+            We provide legal assistance across diverse areas of law,
+            with a focus on clarity, preparation and practical
+            understanding.
+
+        </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+
+        <div class="service-card">
+
+            <div class="service-number">
+                01 / CIVIL
+            </div>
+
+            <h3>
+                Civil Law
+            </h3>
+
+            <p>
+                Legal assistance concerning civil disputes,
+                property matters, recovery issues, contracts
+                and related civil proceedings.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-number">
+                02 / COMMERCIAL
+            </div>
+
+            <h3>
+                Commercial Law
+            </h3>
+
+            <p>
+                Guidance for businesses and entrepreneurs on
+                commercial arrangements, contracts, disputes
+                and business-related legal concerns.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-number">
+                03 / MATRIMONIAL
+            </div>
+
+            <h3>
+                Matrimonial Law
+            </h3>
+
+            <p>
+                Sensitive legal assistance in matrimonial and
+                family matters, including divorce, maintenance,
+                custody and related concerns.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-number">
+                04 / INTELLECTUAL PROPERTY
+            </div>
+
+            <h3>
+                Intellectual Property
+            </h3>
+
+            <p>
+                Assistance relating to intellectual property
+                rights and legal concerns involving creative,
+                technological and commercial assets.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-number">
+                05 / DISPUTE RESOLUTION
+            </div>
+
+            <h3>
+                Arbitration
+            </h3>
+
+            <p>
+                Support in arbitration, negotiations, mediation
+                and other structured approaches to resolving
+                legal and commercial disputes.
+            </p>
+
+        </div>
+
+
+        <div class="service-card">
+
+            <div class="service-number">
+                06 / TECHNOLOGY
+            </div>
+
+            <h3>
+                Cyber Law
+            </h3>
+
+            <p>
+                Legal guidance concerning digital disputes,
+                cyber-related concerns, online matters and
+                emerging issues in technology law.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= WHY ================= -->
+
+<section class="why">
+
+    <div class="section-label">
+        OUR APPROACH
+    </div>
+
+    <h2>
+        Why Choose
+        <span>Rivaara Chambers?</span>
+    </h2>
+
+    <p>
+
+        We believe that effective legal assistance begins with
+        understanding. Our approach focuses on clear communication,
+        careful preparation and practical legal thinking.
+
+    </p>
+
+
+    <div class="why-grid">
+
+
+        <div class="why-box">
+
+            <div class="why-icon">
+                ✓
+            </div>
+
+            <h3>
+                Clear Communication
+            </h3>
+
+            <p>
+                Legal concepts and processes are explained clearly
+                so clients can better understand their position.
+            </p>
+
+        </div>
+
+
+        <div class="why-box">
+
+            <div class="why-icon">
+                ◇
+            </div>
+
+            <h3>
+                Thoughtful Advice
+            </h3>
+
+            <p>
+                Every matter is considered carefully with attention
+                to its specific facts, circumstances and objectives.
+            </p>
+
+        </div>
+
+
+        <div class="why-box">
+
+            <div class="why-icon">
+                +
+            </div>
+
+            <h3>
+                Practical Solutions
+            </h3>
+
+            <p>
+                Our focus is on developing practical and legally
+                sound approaches suited to the matter at hand.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FINAL ================= -->
+
+<section class="final">
+
+    <div class="final-content">
+
+        <h2>
+            Your Legal Matters.
+            <span>Our Focus.</span>
+        </h2>
+
+        <p>
+
+            Rivaara Chambers strives to provide a professional,
+            considered and client-focused legal experience —
+            helping individuals and organisations approach
+            complex legal matters with greater clarity and confidence.
+
+        </p>
+
+        <a href="contact.html" class="btn btn-primary">
+            Contact the Chambers
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    © 2026 Rivaara Chambers | Advocates & Legal Consultants
+
+</footer>
+
+
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+    const nav = document.querySelector("nav");
+
+    if(window.scrollY > 40){
+
+        nav.style.boxShadow =
+        "0 8px 30px rgba(0,0,0,0.25)";
+
+    }else{
+
+        nav.style.boxShadow = "none";
+
+    }
+
+});
+
+
+const cards = document.querySelectorAll(
+    ".service-card, .why-box"
+);
+
+
+const observer = new IntersectionObserver(
+
+    function(entries){
+
+        entries.forEach(function(entry){
+
+            if(entry.isIntersecting){
+
+                entry.target.style.opacity = "1";
+
+                entry.target.style.transform =
+                "translateY(0)";
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold:0.15
+    }
+
+);
+
+
+cards.forEach(function(card){
+
+    card.style.opacity = "0";
+
+    card.style.transform =
+    "translateY(35px)";
+
+    card.style.transition =
+    "opacity .7s ease, transform .7s ease";
+
+    observer.observe(card);
+
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  
+<title>Rivaara Chambers | Contact Us</title>  
+  
+<style>  
+  
+*{  
+    margin:0;  
+    padding:0;  
+    box-sizing:border-box;  
+}  
+  
+html{  
+    scroll-behavior:smooth;  
+}  
+  
+body{  
+    font-family:Arial, sans-serif;  
+    background:#f8f5ef;  
+    color:#292929;  
+}  
+  
+/* HEADER */  
+  
+header{  
+    background:#151515;  
+    padding:20px 7%;  
+    display:flex;  
+    justify-content:space-between;  
+    align-items:center;  
+    border-bottom:1px solid #b89545;  
+}  
+  
+.logo{  
+    color:#d4af5a;  
+    font-size:25px;  
+    font-weight:bold;  
+    letter-spacing:2px;  
+}  
+  
+nav a{  
+    color:white;  
+    text-decoration:none;  
+    margin-left:30px;  
+    font-size:15px;  
+    transition:0.3s;  
+}  
+  
+nav a:hover{  
+    color:#d4af5a;  
+}  
+  
+/* HERO */  
+  
+.hero{  
+    text-align:center;  
+    padding:70px 20px 55px;  
+    background:#202020;  
+    color:white;  
+}  
+  
+.hero h1{  
+    color:#d4af5a;  
+    font-size:45px;  
+    margin-bottom:15px;  
+}  
+  
+.hero p{  
+    max-width:650px;  
+    margin:auto;  
+    color:#d8d8d8;  
+    line-height:1.7;  
+    font-size:16px;  
+}  
+  
+/* MAIN */  
+  
+.contact-section{  
+    width:90%;  
+    max-width:1100px;  
+    margin:60px auto;  
+    display:grid;  
+    grid-template-columns:0.8fr 1.2fr;  
+    gap:35px;  
+}  
+  
+/* LEFT INFO */  
+  
+.contact-info{  
+    background:#202020;  
+    color:white;  
+    padding:38px;  
+    border-top:4px solid #c6a04e;  
+}  
+  
+.contact-info h2{  
+    color:#d4af5a;  
+    margin-bottom:18px;  
+    font-size:27px;  
+}  
+  
+.contact-info p{  
+    color:#d1d1d1;  
+    line-height:1.7;  
+    margin-bottom:30px;  
+}  
+  
+.info-box{  
+    margin-bottom:24px;  
+}  
+  
+.info-box h3{  
+    color:#d4af5a;  
+    font-size:16px;  
+    margin-bottom:7px;  
+}  
+  
+.info-box p{  
+    margin:0;  
+    font-size:14px;  
+}  
+
+
+/* ================= FOLLOW US ================= */
+
+.follow-us{
+    margin-top:35px;
+    padding-top:25px;
+    border-top:1px solid rgba(212,175,90,0.35);
+}
+
+.follow-us h3{
+    color:#d4af5a;
+    font-size:18px;
+    margin-bottom:18px;
+}
+
+.social-links{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.social-link{
+    width:44px;
+    height:44px;
+    border:1px solid #d4af5a;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#d4af5a;
+    transition:0.3s;
+    position:relative;
+}
+
+.social-link:hover{
+    background:#d4af5a;
+    color:#202020;
+    transform:translateY(-4px);
+}
+
+.whatsapp-icon{
+    font-size:24px;
+    font-weight:bold;
+    font-family:Arial, sans-serif;
+}
+
+.linkedin-icon{
+    font-size:21px;
+    font-weight:bold;
+    font-family:Arial, sans-serif;
+}
+
+.social-info{
+    color:#cfcfcf;
+    font-size:13px;
+    line-height:1.5;
+}
+
+.social-item{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+
+/* FORM */  
+  
+.contact-form{  
+    background:white;  
+    padding:38px;  
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);  
+}  
+  
+.contact-form h2{  
+    font-size:27px;  
+    margin-bottom:8px;  
+    color:#222;  
+}  
+  
+.form-intro{  
+    color:#777;  
+    font-size:14px;  
+    margin-bottom:25px;  
+}  
+  
+.row{  
+    display:grid;  
+    grid-template-columns:1fr 1fr;  
+    gap:18px;  
+}  
+  
+.form-group{  
+    margin-bottom:20px;  
+}  
+  
+label{  
+    display:block;  
+    font-size:14px;  
+    font-weight:bold;  
+    margin-bottom:8px;  
+    color:#333;  
+}  
+  
+label span{  
+    color:#a77b24;  
+}  
+  
+input,  
+select,  
+textarea{  
+    width:100%;  
+    padding:13px 14px;  
+    border:1px solid #d5d5d5;  
+    outline:none;  
+    font-family:Arial, sans-serif;  
+    font-size:14px;  
+    transition:0.3s;  
+    background:#fff;  
+}  
+  
+input:focus,  
+select:focus,  
+textarea:focus{  
+    border-color:#b89545;  
+    box-shadow:0 0 0 2px rgba(184,149,69,0.12);  
+}  
+  
+textarea{  
+    height:130px;  
+    resize:vertical;  
+}  
+  
+button{  
+    width:100%;  
+    padding:14px;  
+    border:none;  
+    background:#202020;  
+    color:#d4af5a;  
+    font-size:15px;  
+    font-weight:bold;  
+    letter-spacing:1px;  
+    cursor:pointer;  
+    transition:0.3s;  
+}  
+  
+button:hover{  
+    background:#b89545;  
+    color:white;  
+}  
+  
+/* NOTE */  
+  
+.note{  
+    margin-top:15px;  
+    font-size:12px;  
+    color:#777;  
+    line-height:1.5;  
+}  
+  
+/* FOOTER */  
+  
+footer{  
+    background:#151515;  
+    color:#aaa;  
+    text-align:center;  
+    padding:25px;  
+    font-size:13px;  
+}  
+  
+footer span{  
+    color:#d4af5a;  
+}  
+  
+/* MOBILE */  
+  
+@media(max-width:800px){  
+  
+    header{  
+        flex-direction:column;  
+        gap:15px;  
+    }  
+  
+    nav a{  
+        margin:0 8px;  
+        font-size:13px;  
+    }  
+  
+    .hero{  
+        padding:50px 20px;  
+    }  
+  
+    .hero h1{  
+        font-size:35px;  
+    }  
+  
+    .contact-section{  
+        grid-template-columns:1fr;  
+        width:92%;  
+        margin:40px auto;  
+    }  
+  
+    .row{  
+        grid-template-columns:1fr;  
+        gap:0;  
+    }  
+  
+    .contact-info,  
+    .contact-form{  
+        padding:28px;  
+    }
+
+    .social-links{
+        flex-wrap:wrap;
+    }
+  
+}  
+  
+</style>  
+</head>  
+  
+<body>  
+  
+<!-- HEADER -->  
+  
+<header>  
+  
+    <div class="logo">RIVAARA CHAMBERS</div>  
+  
+    <nav>  
+        <a href="index.html">Home</a>  
+        <a href="about.html">About Us</a>  
+        <a href="services.html">Services</a>  
+        <a href="contact.html">Contact</a>  
+    </nav>  
+  
+</header>  
+  
+  
+<!-- HERO -->  
+  
+<section class="hero">  
+  
+    <h1>Contact Us</h1>  
+  
+    <p>  
+        Have a legal question or wish to discuss a matter with our chambers?  
+        Please share your details and briefly tell us how we can assist you.  
+    </p>  
+  
+</section>  
+  
+  
+<!-- CONTACT SECTION -->  
+  
+<section class="contact-section">  
+  
+    <!-- LEFT SIDE -->  
+  
+    <div class="contact-info">  
+  
+        <h2>Let's Discuss Your Matter</h2>  
+  
+        <p>  
+            Whether you require legal assistance, wish to understand your  
+            options, or simply want to make an enquiry, you can reach out to  
+            Rivaara Chambers through the details below.  
+        </p>  
+  
+        <div class="info-box">  
+            <h3>Office</h3>  
+            <p>
+                Chambers - 125,S block,Delhi high court,shershah 
+                road delhi-110034<br>  
+                Office - 48B,AD block,power appartments, 
+                Pitampura,Delhi -110034<br> 
+                New Delhi, India
+            </p>  
+        </div>  
+  
+        <div class="info-box">  
+            <h3>Phone</h3>  
+            <p>+91 7838616821</p>  
+        </div>  
+  
+        <div class="info-box">  
+            <h3>Email</h3>  
+            <p>info@rivaarachambers.com</p>  
+        </div>  
+  
+        <div class="info-box">  
+            <h3>Office Hours</h3>  
+            <p>Monday – Saturday<br>  
+            10:00 AM – 8:00 PM</p>  
+        </div>
+
+
+        <!-- FOLLOW US -->
+
+        <div class="follow-us">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-links">
+
+                <!-- WHATSAPP -->
+
+                <div class="social-item">
+
+                    <a
+                        href="https://wa.me/917838616821"
+                        target="_blank"
+                        class="social-link"
+                        title="WhatsApp"
+                    >
+                        <span class="whatsapp-icon">◔</span>
+                    </a>
+
+                    <div class="social-info">
+                        WhatsApp<br>
+                        +91 7838616821
+                    </div>
+
+                </div>
+
+
+                <!-- LINKEDIN -->
+
+                <div class="social-item">
+
+                    <a
+                        href="https://www.linkedin.com/in/riya-gupta-a2a63a22b?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+                        target="_blank"
+                        class="social-link"
+                        title="LinkedIn"
+                    >
+                        <span class="linkedin-icon">in</span>
+                    </a>
+
+                    <div class="social-info">
+                        LinkedIn<br>
+                        Rivaara Chambers
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+  
+    </div>  
+  
+  
+    <!-- RIGHT SIDE FORM -->  
+  
+    <div class="contact-form">  
+  
+        <h2>Send an Enquiry</h2>  
+  
+        <p class="form-intro">  
+            Please provide the following information so that we can understand  
+            your enquiry better.  
+        </p>  
+  
+        <form id="contactForm">  
+  
+            <div class="row">  
+  
+                <div class="form-group">  
+                    <label>Full Name <span>*</span></label>  
+                    <input type="text" id="name" placeholder="Enter your full name" required>  
+                </div>  
+  
+                <div class="form-group">  
+                    <label>Phone Number <span>*</span></label>  
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>  
+                </div>  
+  
+            </div>  
+  
+  
+            <!-- BUSINESS NAME ADDED -->  
+  
+            <div class="form-group">  
+  
+                <label>Business Name</label>  
+  
+                <input  
+                    type="text"  
+                    id="business"  
+                    placeholder="Enter your business or company name"  
+                >  
+  
+            </div>  
+  
+  
+            <!-- CITY / STATE ADDED -->  
+  
+            <div class="row">  
+  
+                <div class="form-group">  
+  
+                    <label>City <span>*</span></label>  
+  
+                    <input  
+                        type="text"  
+                        id="city"  
+                        placeholder="Enter your city"  
+                        required  
+                    >  
+  
+                </div>  
+  
+                <div class="form-group">  
+  
+                    <label>State <span>*</span></label>  
+  
+                    <input  
+                        type="text"  
+                        id="state"  
+                        placeholder="Enter your state"  
+                        required  
+                    >  
+  
+                </div>  
+  
+            </div>  
+  
+  
+            <div class="form-group">  
+  
+                <label>Email Address <span>*</span></label>  
+  
+                <input  
+                    type="email"  
+                    id="email"  
+                    placeholder="Enter your email address"  
+                    required  
+                >  
+  
+            </div>  
+  
+  
+            <div class="form-group">  
+  
+                <label>Legal Service Required <span>*</span></label>  
+  
+                <select id="service" required>  
+  
+                    <option value="">Select a service</option>  
+  
+                    <option>Civil Law</option>  
+                    <option>Commercial Law</option>  
+                    <option>Matrimonial Law</option>  
+                    <option>Intellectual Property</option>  
+                    <option>Arbitration</option>  
+                    <option>Cyber Law</option>  
+                    <option>Other / General Enquiry</option>  
+  
+                </select>  
+  
+            </div>  
+  
+  
+            <div class="form-group">  
+  
+                <label>Briefly Describe Your Matter <span>*</span></label>  
+  
+                <textarea  
+                    id="message"  
+                    placeholder="Please briefly explain your legal matter or enquiry..."  
+                    required  
+                ></textarea>  
+  
+            </div>  
+  
+  
+            <button type="submit">  
+                SUBMIT ENQUIRY  
+            </button>  
+  
+            <p class="note">  
+                * Please do not share highly confidential or sensitive documents  
+                through this form. Initial enquiries are subject to review and  
+                do not automatically create an advocate-client relationship.  
+            </p>  
+  
+        </form>  
+  
+    </div>  
+  
+</section>  
+  
+  
+<!-- FOOTER -->  
+  
+<footer>  
+  
+    © 2026 <span>Rivaara Chambers</span>. All Rights Reserved.  
+  
+</footer>  
+  
+  
+<script>  
+  
+document.getElementById("contactForm").addEventListener("submit", function(event){  
+  
+    event.preventDefault();  
+  
+    let name = document.getElementById("name").value;  
+  
+    alert(  
+        "Thank you, " + name +  
+        "! Your enquiry has been submitted successfully."  
+    );  
+  
+    document.getElementById("contactForm").reset();  
+  
+});  
+  
+</script>  
+  
+</body>  
+</html>
+```
