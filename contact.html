@@ -52,7 +52,7 @@ nav a{
     position:relative;  
     padding-bottom:6px;  
 }  
-
+  
 nav a::after{  
     content:"";  
     position:absolute;  
@@ -67,15 +67,15 @@ nav a::after{
 nav a:hover{  
     color:#d4af5a;  
 }  
-
+  
 nav a:hover::after{  
     width:100%;  
 }  
-
+  
 nav a.active{  
     color:#d4af5a;  
 }  
-
+  
 nav a.active::after{  
     width:100%;  
 }  
@@ -149,6 +149,23 @@ nav a.active::after{
     margin:0;  
     font-size:14px;  
 }  
+
+/* FORCE PHONE NUMBER WHITE */
+
+.phone-number,
+.phone-number a{
+    color:#ffffff !important;
+    text-decoration:none !important;
+    -webkit-text-fill-color:#ffffff !important;
+}
+
+.phone-number a:visited,
+.phone-number a:hover,
+.phone-number a:active{
+    color:#ffffff !important;
+    text-decoration:none !important;
+}
+
 
 /* ADVOCATE HIGHLIGHT */
 
@@ -452,9 +469,9 @@ footer span{
         <div class="info-box">  
             <h3>Office</h3>  
             <p>
-                Chambers - 125,S block,Delhi high court,shershah 
-                road delhi-110034<br>  
-                Office - 48B,AD block,power appartments, 
+                Chamber - 125,S Block,Delhi High Court,Shershah 
+                Road, Delhi-110503<br>  
+                Office - 48 B,AD Block,Power Appartments, 
                 Pitampura,Delhi -110034<br> 
                 New Delhi, India
             </p>  
@@ -462,7 +479,9 @@ footer span{
   
         <div class="info-box">  
             <h3>Phone</h3>  
-            <p>+91 7838616821</p>  
+            <p class="phone-number">
+                <a href="tel:+917838616821">+91 7838616821</a>
+            </p>  
         </div>  
   
         <div class="info-box">  
