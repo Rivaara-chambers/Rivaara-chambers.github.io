@@ -26,9 +26,6 @@ body{
     color:#172536;
 }
 
-
-/* ================= NAVBAR ================= */
-
 nav{
     position:fixed;
     top:0;
@@ -49,9 +46,6 @@ nav{
 
     border-bottom:1px solid rgba(214,180,94,0.25);
 }
-
-
-/* ================= LOGO ================= */
 
 .logo-area{
     display:flex;
@@ -122,9 +116,6 @@ nav{
     margin-top:3px;
 }
 
-
-/* ================= NAV LINKS ================= */
-
 nav ul{
     list-style:none;
     display:flex;
@@ -160,9 +151,6 @@ nav ul li a:hover::after,
 nav ul li a.active::after{
     width:100%;
 }
-
-
-/* ================= HERO ================= */
 
 .services-hero{
     min-height:620px;
@@ -220,9 +208,6 @@ nav ul li a.active::after{
     line-height:1.8;
 }
 
-
-/* ================= INTRO ================= */
-
 .intro{
     padding:95px 8%;
     text-align:center;
@@ -256,9 +241,6 @@ nav ul li a.active::after{
     line-height:1.9;
 }
 
-
-/* ================= SERVICES ================= */
-
 .services{
     padding:100px 8%;
     background:#091827;
@@ -273,9 +255,6 @@ nav ul li a.active::after{
 
     gap:28px;
 }
-
-
-/* ================= SERVICE CARD ================= */
 
 .service-card{
     background:linear-gradient(
@@ -302,9 +281,6 @@ nav ul li a.active::after{
     border-color:#d8b568;
     box-shadow:0 20px 45px rgba(0,0,0,.35);
 }
-
-
-/* ================= SERVICE IMAGE ================= */
 
 .service-image{
     width:100%;
@@ -337,9 +313,6 @@ nav ul li a.active::after{
     transform:scale(1.08);
 }
 
-
-/* ================= SERVICE CONTENT ================= */
-
 .service-content{
     padding:32px 30px 35px;
     flex:1;
@@ -366,9 +339,6 @@ nav ul li a.active::after{
     line-height:1.8;
 }
 
-
-/* ================= GOLD LINE ================= */
-
 .service-card .gold-line{
     width:45px;
     height:2px;
@@ -380,11 +350,6 @@ nav ul li a.active::after{
 .service-card:hover .gold-line{
     width:75px;
 }
-
-
-/* =========================================================
-   INTELLECTUAL PROPERTY RIGHTS
-========================================================= */
 
 .ip-section{
     padding:105px 8%;
@@ -503,9 +468,6 @@ nav ul li a.active::after{
     font-size:14px;
     line-height:1.7;
 }
-
-
-/* ================= IP MODAL ================= */
 
 .ip-modal{
     display:none;
@@ -644,9 +606,6 @@ nav ul li a.active::after{
     color:#071522;
 }
 
-
-/* ================= PROCESS ================= */
-
 .process{
     padding:105px 8%;
     background:#f3f0e8;
@@ -725,8 +684,6 @@ nav ul li a.active::after{
 }
 
 
-/* ================= CTA ================= */
-
 .cta{
     min-height:430px;
 
@@ -799,8 +756,6 @@ nav ul li a.active::after{
 }
 
 
-/* ================= FOOTER ================= */
-
 footer{
     background:#050e17;
     color:#8995a1;
@@ -812,8 +767,6 @@ footer{
     font-size:13px;
 }
 
-
-/* ================= RESPONSIVE ================= */
 
 @media(max-width:1050px){
 
@@ -954,9 +907,6 @@ footer{
 
 <body>
 
-
-<!-- ================= NAVBAR ================= -->
-
 <nav>
 
     <div class="logo-area">
@@ -1006,9 +956,6 @@ footer{
 </nav>
 
 
-
-<!-- ================= HERO ================= -->
-
 <section class="services-hero">
 
     <div class="hero-content">
@@ -1034,9 +981,6 @@ footer{
 </section>
 
 
-
-<!-- ================= INTRO ================= -->
-
 <section class="intro">
 
     <div class="section-label">
@@ -1057,16 +1001,9 @@ footer{
 
 </section>
 
-
-
-<!-- ================= SERVICES ================= -->
-
 <section class="services">
 
     <div class="service-grid">
-
-
-        <!-- ================= CIVIL ================= -->
 
         <div class="service-card">
 
@@ -1102,9 +1039,6 @@ footer{
         </div>
 
 
-
-        <!-- ================= COMMERCIAL ================= -->
-
         <div class="service-card">
 
             <div class="service-image">
@@ -1139,8 +1073,6 @@ footer{
         </div>
 
 
-
-        <!-- ================= CYBER ================= -->
 
         <div class="service-card">
 
@@ -1181,10 +1113,6 @@ footer{
 
 
 
-<!-- =========================================================
-     INTELLECTUAL PROPERTY RIGHTS
-========================================================= -->
-
 <section class="ip-section">
 
     <div class="section-label">
@@ -1205,9 +1133,6 @@ footer{
 
 
     <div class="ip-grid">
-
-
-        <!-- ================= TRADEMARK ================= -->
 
         <div class="ip-card" onclick="openIP('trademark')">
 
@@ -1242,10 +1167,6 @@ footer{
 
         </div>
 
-
-
-        <!-- ================= COPYRIGHT ================= -->
-
         <div class="ip-card" onclick="openIP('copyright')">
 
             <div class="ip-image">
@@ -1278,10 +1199,6 @@ footer{
             </div>
 
         </div>
-
-
-
-        <!-- ================= PATENT ================= -->
 
         <div class="ip-card" onclick="openIP('patent')">
 
@@ -1322,9 +1239,6 @@ footer{
 
 </section>
 
-
-
-<!-- ================= TRADEMARK MODAL ================= -->
 
 <div class="ip-modal" id="trademarkModal">
 
@@ -1387,10 +1301,6 @@ footer{
     </div>
 
 </div>
-
-
-
-<!-- ================= COPYRIGHT MODAL ================= -->
 
 <div class="ip-modal" id="copyrightModal">
 
@@ -1456,9 +1366,6 @@ footer{
 </div>
 
 
-
-<!-- ================= PATENT MODAL ================= -->
-
 <div class="ip-modal" id="patentModal">
 
     <div class="ip-modal-box">
@@ -1522,10 +1429,6 @@ footer{
     </div>
 
 </div>
-
-
-
-<!-- ================= PROCESS ================= -->
 
 <section class="process">
 
@@ -1611,9 +1514,6 @@ footer{
 </section>
 
 
-
-<!-- ================= CTA ================= -->
-
 <section class="cta">
 
     <div class="cta-content">
@@ -1638,9 +1538,6 @@ footer{
 </section>
 
 
-
-<!-- ================= FOOTER ================= -->
-
 <footer>
 
     © 2026 Rivaara Chambers | Advocates & Legal Consultants
@@ -1648,13 +1545,8 @@ footer{
 </footer>
 
 
-
-<!-- ================= JAVASCRIPT ================= -->
-
 <script>
 
-
-/* ================= NAVBAR SHADOW ================= */
 
 window.addEventListener("scroll", function(){
 
@@ -1673,9 +1565,6 @@ window.addEventListener("scroll", function(){
 
 });
 
-
-
-/* ================= CARD ANIMATION ================= */
 
 const cards = document.querySelectorAll(
     ".service-card, .process-box, .ip-card"
@@ -1722,9 +1611,6 @@ cards.forEach(function(card){
 });
 
 
-
-/* ================= IP MODAL ================= */
-
 function openIP(type){
 
     const modal =
@@ -1749,9 +1635,6 @@ function closeIP(type){
 }
 
 
-
-/* ================= CLOSE ON OUTSIDE CLICK ================= */
-
 document.querySelectorAll(".ip-modal").forEach(function(modal){
 
     modal.addEventListener("click", function(event){
@@ -1768,9 +1651,6 @@ document.querySelectorAll(".ip-modal").forEach(function(modal){
 
 });
 
-
-
-/* ================= ESC KEY ================= */
 
 document.addEventListener("keydown", function(event){
 
